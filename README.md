@@ -12,6 +12,8 @@ renderTodos metodu çalıştırılacak.
 
 * HTTP Status'ün 
   * Görevleri nelerdir? Bu görevlerin anlamlarını açıklayınız.
+HTTP durum kodları (HTTP yanıt kodları), bir web sayfasının barındırıldığı sunucuya, istemciden gönderilen HTTP isteğine yanıt olarak döndürülen kodlara
+verilen isimdir. 
    
 * HTTP Request'in metodlari  nelerdir? 
   
