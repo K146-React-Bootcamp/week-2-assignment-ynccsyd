@@ -35,30 +35,34 @@ Reponse içerisinde gelen Status Code bakarsak;
 - **Client errors (400–499)**: 404 — Not Found, 410 — Gone, …
 - **Server errors (500–599)**:500 — Internal Server Error, 503 — Service Unavailable,…
 
-
 ***1XX: Bilgi amaçlı kodlar:***
 - 100 Continue (Devam): İstemci tarafından yapılan isteğin sunucu tarafından başarılı bir şekilde alındığını ve işlemin devam edeceğini belirtir.
-***2XX: Başarılı Cevap Kodları:*** 
+
+***2XX: Başarılı Cevap Kodları:***
 - 200 OK (Tamam): İstemci tarafından yapılan isteğin başarılı bir şekilde alındığını ve  sunucudan cevabın başarılı bir şekilde geri döndüğünü belirtir.
 - 201 Created (Oluşturuldu): İstemci tarafından yapılan isteğin başarılı olduğunu ve  sunucuda yeni bir kaynak oluşturulduğunu belirtir.
 - 202 Accepted (Kabul Edildi): Yapılan isteğin işlenmek üzere kabul edildiğini fakat işlemin henüz tamamlanmadığını belirtir.
+
 ***3XX Yönlendirme Cevap Kodları:***
-•	 301 Moved Permanently (Kalıcı Olarak Taşındı): İstekte bulunulan kaynak veya web sayfasının kalıcı olarak başka bir yere taşındığını belirtir ve o adrese yönlendirir.
-•	 303 See Other (Diğerlerine Bak): İstekte bulunulan kaynağın farklı bir URL’de olduğu ve bu kaynağa GET isteğinin yapılması gerektiğini belirtir.
-•	 304 Not Modified (Değiştirilmedi): İstemci tarafından koşullu bir GET isteğinde bulunulmuş ve erişime izin verilmiş, fakat istekte bulunulan belgede değişiklik olmamışsa sunucu bu cevap kodunu dönmek zorundadır.
-•	 307 Temporary Redirect (Geçici Yönlendirme): İstekte bulunulan kaynağın geçici olarak farklı bir URL adreste bulunduğunu belirtir.
+- 301 Moved Permanently (Kalıcı Olarak Taşındı): İstekte bulunulan kaynak veya web sayfasının kalıcı olarak başka bir yere taşındığını belirtir ve o adrese yönlendirir.
+- 303 See Other (Diğerlerine Bak): İstekte bulunulan kaynağın farklı bir URL’de olduğu ve bu kaynağa GET isteğinin yapılması gerektiğini belirtir.
+- 304 Not Modified (Değiştirilmedi): İstemci tarafından koşullu bir GET isteğinde bulunulmuş ve erişime izin verilmiş, fakat istekte bulunulan belgede değişiklik olmamışsa sunucu bu cevap kodunu dönmek zorundadır.
+- 307 Temporary Redirect (Geçici Yönlendirme): İstekte bulunulan kaynağın geçici olarak farklı bir URL adreste bulunduğunu belirtir.
+
 ***4XX İstemci Hatası Cevap Kodları***
-•	 400 Bad Request (Kötü İstek): Yapılan isteğin hatalı URL yapısından dolayı sunucu tarafından anlaşılmadığını belirtir.
-•	 401 Unauthorized (Yetkisiz): İstek yapılan kaynağa erişim izni için kullanıcı doğrulamasının olması gerektiğini belirtir.
-•	 403 Forbidden (Yasak): Sunucunun isteği anladığını fakat isteği yerine getirmek istemediğini ve kullanıcı doğrulamasının yeterli olmadığını belirtir.
-•	 404 Not Found (Nesne Bulunamadı): Sunucunun yapılan istekte bulunan kaynak ile ilgili herhangi bir nesne bulamadığını belirtir. Dosya veya klasör yolunun hatalı girilmesi sebebiyle istemcilerin en çok karşılaştığı hata kodudur. Standart hata kodu mesajı yerine web sunucusunun yapılandırılmasıyla özelleştirilmiş hata sayfası görüntülenmesi de mümkün olmaktadır.
-•	 410 Gone (Kayıp): İstekte bulunulan kaynağın sunucuda artık bulunmadığını ve yönlendirilecek web adresinin de bilinmediğini belirtir.
-•	 414 Request-URI Too Long (İstek Tekdüzen Kaynak Tanımlayıcı Çok Uzun): İstekte bulunulan web adresinin sunucunun yorumlayabileceğinden uzun olduğu için isteği gerçekleştirmeyi reddettiğini belirtir.
+- 400 Bad Request (Kötü İstek): Yapılan isteğin hatalı URL yapısından dolayı sunucu tarafından anlaşılmadığını belirtir.
+- 401 Unauthorized (Yetkisiz): İstek yapılan kaynağa erişim izni için kullanıcı doğrulamasının olması gerektiğini belirtir.
+- 403 Forbidden (Yasak): Sunucunun isteği anladığını fakat isteği yerine getirmek istemediğini ve kullanıcı doğrulamasının yeterli olmadığını belirtir.
+- 404 Not Found (Nesne Bulunamadı): Sunucunun yapılan istekte bulunan kaynak ile ilgili herhangi bir nesne bulamadığını belirtir. Dosya veya klasör yolunun hatalı girilmesi sebebiyle istemcilerin en çok karşılaştığı hata kodudur. Standart hata kodu mesajı yerine web sunucusunun yapılandırılmasıyla özelleştirilmiş hata sayfası görüntülenmesi de mümkün olmaktadır.
+- 410 Gone (Kayıp): İstekte bulunulan kaynağın sunucuda artık bulunmadığını ve yönlendirilecek web adresinin de bilinmediğini belirtir.
+- 414 Request-URI Too Long (İstek Tekdüzen Kaynak Tanımlayıcı Çok Uzun): İstekte bulunulan web adresinin sunucunun yorumlayabileceğinden uzun olduğu için isteği gerçekleştirmeyi reddettiğini belirtir.
 ***5XX: Sunucu Hatası Cevap Kodları***
-•	 500 Internal Server Error (Dâhili Sunucu Hatası): Sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaşıldığını belirtir.
-•	 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
+- 500 Internal Server Error (Dâhili Sunucu Hatası): Sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaşıldığını belirtir.
+- 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
+
+
    
-* HTTP Request'in metodlari  nelerdir? 
+##### HTTP Request'in metodlari  nelerdir? 
 **HTTP Request / Response**
 
 Request içerisinde ***Method, Path, Version Control ve Header*** kısmından oluşur. Metodları incelersek;
@@ -73,8 +77,7 @@ Request içerisinde ***Method, Path, Version Control ve Header*** kısmından ol
 **9.PATCH:** Bu metod bir kaynağa istediğiniz küçük çaplı değişimi yapmanızı sağlar.
 **10.SEARCH:** Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
 
-  
-*  Fetch API'nin metodlari ile örnekleri:
+  #####  Fetch API'nin metodlari ile örnekleri:
 
 Javascript Fetch Api Kullanımı:Fetch API window objesinde bulunan web istekleri yapabileceğimiz ve cevaplarını kolaylıkla işleyebileceğimiz asenkron çalışan bir metoddur.
 
