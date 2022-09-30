@@ -56,9 +56,13 @@ Reponse içerisinde gelen Status Code bakarsak;
 - 404 Not Found (Nesne Bulunamadı): Sunucunun yapılan istekte bulunan kaynak ile ilgili herhangi bir nesne bulamadığını belirtir. Dosya veya klasör yolunun hatalı girilmesi sebebiyle istemcilerin en çok karşılaştığı hata kodudur. Standart hata kodu mesajı yerine web sunucusunun yapılandırılmasıyla özelleştirilmiş hata sayfası görüntülenmesi de mümkün olmaktadır.
 - 410 Gone (Kayıp): İstekte bulunulan kaynağın sunucuda artık bulunmadığını ve yönlendirilecek web adresinin de bilinmediğini belirtir.
 - 414 Request-URI Too Long (İstek Tekdüzen Kaynak Tanımlayıcı Çok Uzun): İstekte bulunulan web adresinin sunucunun yorumlayabileceğinden uzun olduğu için isteği gerçekleştirmeyi reddettiğini belirtir.
+
 ***5XX: Sunucu Hatası Cevap Kodları***
 - 500 Internal Server Error (Dâhili Sunucu Hatası): Sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaşıldığını belirtir.
 - 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
+
+
+
 
 
 
