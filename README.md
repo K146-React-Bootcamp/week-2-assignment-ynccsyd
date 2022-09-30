@@ -37,11 +37,11 @@ Reponse içerisinde gelen Status Code bakarsak;
 
 
 ***1XX: Bilgi amaçlı kodlar:***
-•	 100 Continue (Devam): İstemci tarafından yapılan isteğin sunucu tarafından başarılı bir şekilde alındığını ve işlemin devam edeceğini belirtir.
-***2XX: Başarılı Cevap Kodları:***
-•	 200 OK (Tamam): İstemci tarafından yapılan isteğin başarılı bir şekilde alındığını ve  sunucudan cevabın başarılı bir şekilde geri döndüğünü belirtir.
-•	 201 Created (Oluşturuldu): İstemci tarafından yapılan isteğin başarılı olduğunu ve  sunucuda yeni bir kaynak oluşturulduğunu belirtir.
-•	 202 Accepted (Kabul Edildi): Yapılan isteğin işlenmek üzere kabul edildiğini fakat işlemin henüz tamamlanmadığını belirtir.
+- 100 Continue (Devam): İstemci tarafından yapılan isteğin sunucu tarafından başarılı bir şekilde alındığını ve işlemin devam edeceğini belirtir.
+***2XX: Başarılı Cevap Kodları:*** 
+- 200 OK (Tamam): İstemci tarafından yapılan isteğin başarılı bir şekilde alındığını ve  sunucudan cevabın başarılı bir şekilde geri döndüğünü belirtir.
+- 201 Created (Oluşturuldu): İstemci tarafından yapılan isteğin başarılı olduğunu ve  sunucuda yeni bir kaynak oluşturulduğunu belirtir.
+- 202 Accepted (Kabul Edildi): Yapılan isteğin işlenmek üzere kabul edildiğini fakat işlemin henüz tamamlanmadığını belirtir.
 ***3XX Yönlendirme Cevap Kodları:***
 •	 301 Moved Permanently (Kalıcı Olarak Taşındı): İstekte bulunulan kaynak veya web sayfasının kalıcı olarak başka bir yere taşındığını belirtir ve o adrese yönlendirir.
 •	 303 See Other (Diğerlerine Bak): İstekte bulunulan kaynağın farklı bir URL’de olduğu ve bu kaynağa GET isteğinin yapılması gerektiğini belirtir.
