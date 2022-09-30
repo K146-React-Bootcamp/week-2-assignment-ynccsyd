@@ -13,7 +13,6 @@ renderTodos metodu çalıştırılacak.
 * HTTP Status'ün 
   * Görevleri nelerdir? Bu görevlerin anlamlarını açıklayınız.
 
-<<<<<<< HEAD
 HTTP durum kodları (HTTP yanıt kodları), bir web sayfasının barındırıldığı sunucuya, istemciden gönderilen HTTP isteğine yanıt olarak döndürülen kodlara verilen isimdir. 
 Bir tarayıcı (istemci) web sayfasına bağlanmak istediğinde ilgili sayfayı barındıran sunucu, ilgili sayfanın durumu durumu ile alakalı bir cevap (yanıt) döndürür. Her tarayıcı server etkileşimi sırasında gerçekleşen bu işlemde sunucu yanıt olarak 3 (digit) rakamdan oluşan numaralandırılmış bir açıklama döndürür. Bu yanıt HTTP response (yanıt) başlığında yer alır ve sayfa içeriğinin doğrudan bir parçası değildir.
 Bu kodlar, isteğin durumu hakkında bilgi vermektedir.Tamsayı değerlerin ilk basamakları cevap kodları sınıflara ayırmak için kullanılmaktadır. İlk basamağın alabileceği 1-5 arası beş farklı değer vardır
@@ -58,8 +57,6 @@ Reponse içerisinde gelen Status Code bakarsak;
 ***5XX: Sunucu Hatası Cevap Kodları***
 •	 500 Internal Server Error (Dâhili Sunucu Hatası): Sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaşıldığını belirtir.
 •	 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
-=======
->>>>>>> 62717600ec622bcf0c9a3159dbe020ea534e4d91
    
 * HTTP Request'in metodlari  nelerdir? 
 **HTTP Request / Response**
@@ -77,7 +74,6 @@ Request içerisinde ***Method, Path, Version Control ve Header*** kısmından ol
 **10.SEARCH:** Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
 
   
-<<<<<<< HEAD
 *  Fetch API'nin metodlari ile örnekleri:
 
 Javascript Fetch Api Kullanımı:Fetch API window objesinde bulunan web istekleri yapabileceğimiz ve cevaplarını kolaylıkla işleyebileceğimiz asenkron çalışan bir metoddur.
@@ -85,7 +81,3 @@ Javascript Fetch Api Kullanımı:Fetch API window objesinde bulunan web istekler
 Fetch API’ nin yerine *jQuery.ajax()* ve *XMLHttpRequest* kullanılabilinir.. Fakat fetch api hem kullanımı daha kolay hem de window objesi ile birlikte geliyor. Eğer window objesini console’ da yazdırırsak bu window objesinin altında fetch metodunu görebilirsiniz.
 - FETCH API’ yi kullanmak için fetch metoduna istek yapacağımız url’ i parametre olarak vermek gerekiyor.
 - fetch() metodundan sonra, metodun sonuna then() promise metodunu ekleriz:
-**ÖRNEK:** “https://jsonplaceholder.typicode.com/todos” adresine get isteğinde bulunalım. Bu örnek için ekte bulunan FETCH_Sample.js sayfasını inceleyebilirsiniz.
-=======
-*  Fetch API'nin metodlari ile örnekleri
->>>>>>> 62717600ec622bcf0c9a3159dbe020ea534e4d91
