@@ -61,6 +61,8 @@ Reponse içerisinde gelen Status Code bakarsak;
 - 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
 
 
+
+
    
 #### HTTP Request'in metodlari  nelerdir? 
 **HTTP Request / Response** :Request içerisinde ***Method, Path, Version Control ve Header*** kısmından oluşur. Metodları incelersek; 
