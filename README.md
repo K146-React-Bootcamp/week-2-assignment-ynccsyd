@@ -61,12 +61,6 @@ Reponse içerisinde gelen Status Code bakarsak;
 - 500 Internal Server Error (Dâhili Sunucu Hatası): Sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaşıldığını belirtir.
 - 503 Service Unavailable (Hizmet Kullanılamıyor): Sunucunun, geçici olarak aşırı yüklenmesi ya da bakım çalışmasından dolayı şu anda yapılan isteği işleyemediğini belirtir
 
-
-
-
-
-
-
    
 #### HTTP Request'in metodlari  nelerdir? 
 **HTTP Request / Response** :Request içerisinde ***Method, Path, Version Control ve Header*** kısmından oluşur. Metodları incelersek; 
@@ -81,7 +75,7 @@ Reponse içerisinde gelen Status Code bakarsak;
 9. PATCH: Bu metod bir kaynağa istediğiniz küçük çaplı değişimi yapmanızı sağlar.
 10. SEARCH: Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
 
-  #####  Fetch API'nin metodlari ile örnekleri:
+  ###  Fetch API'nin metodlari ile örnekleri:
 
 Javascript Fetch Api Kullanımı:Fetch API window objesinde bulunan web istekleri yapabileceğimiz ve cevaplarını kolaylıkla işleyebileceğimiz asenkron çalışan bir metoddur.
 

@@ -10,7 +10,7 @@ let todo;
 let current_page = 1;
 
 //her sayfada ne kadar satır bulunacağı
-let rows = 10;
+let rows = 15;
 
 
 const renderTodos = (page = 1) => {
@@ -22,13 +22,17 @@ const renderTodos = (page = 1) => {
 
 	const thead = document.createElement("thead");
 	
-	// sıralama yapmak için title-sorting id' si tanımlandı. Butonada verilebilir.
+	// id sıralaması yapmak için id-sorting id' si,
+	// usid-sorting, task- sorting, title-sorting tanımlandı
+	
 	thead.innerHTML = `
     <tr>
-      <th scope="col">id</th>
-      <th scope="col" id="title-sorting">Başlık <button>&darr;</button></th>
-      <th scope="col">Kullanıcı Id</th>
-      <th scope="col">Durum</th>
+      
+      <th scope="col" id="id-sorting">id <button>id_sırala</button></th>
+	  <th scope="col" id="title-sorting">Title <button>&darr;</button></th>
+	  <th scope="col" id="usid-sorting">User ID <button>usID_sırala</button></th>
+	  <th scope="col" id="task-sorting">State <button>Task</button></th>
+      
       <th scope="col"></th>
     </tr>
   `;
@@ -113,7 +117,31 @@ const renderTodos = (page = 1) => {
 		  // sıralama yapılacak tekrar o sayfada render edilecek.
 		  renderTodos(current_page);
 	});
+
+
+	
+	document.querySelector('#id-sorting').addEventListener('click', () => {
+		todos.sort((a, b) =>  b.id - a.id)
+		renderTodos(current_page);
+	})
+
+
+	document.querySelector('#usid-sorting').addEventListener('click', ()=>{
+		todos.sort((a, b)=> b.userId - a.userId)
+		renderTodos(current_page)
+	})
+
+	document.querySelector('#task-sorting').addEventListener('click', ()=> {
+		todos.sort((a, b)=> { 
+			if(a.completed==true & b.completed==false){
+				return -1}	 
+		})
+		renderTodos(current_page);
+
+	})
+
 };
+
 
 
 document.querySelectorAll('.page-link').forEach((btn) => {
