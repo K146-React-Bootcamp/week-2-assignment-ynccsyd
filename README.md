@@ -81,3 +81,4 @@ Javascript Fetch Api Kullanımı:Fetch API window objesinde bulunan web istekler
 Fetch API’ nin yerine *jQuery.ajax()* ve *XMLHttpRequest* kullanılabilinir.. Fakat fetch api hem kullanımı daha kolay hem de window objesi ile birlikte geliyor. Eğer window objesini console’ da yazdırırsak bu window objesinin altında fetch metodunu görebilirsiniz.
 - FETCH API’ yi kullanmak için fetch metoduna istek yapacağımız url’ i parametre olarak vermek gerekiyor.
 - fetch() metodundan sonra, metodun sonuna then() promise metodunu ekleriz:
+**ÖRNEK:** “https://jsonplaceholder.typicode.com/todos” adresine get isteğinde bulunalım. Bu örnek için ekte bulunan FETCH.js sayfasını inceleyebilirsiniz.
