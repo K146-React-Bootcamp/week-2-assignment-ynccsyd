@@ -98,8 +98,10 @@ const renderTodos = (page = 1) => {
 		});
 	});
 
+
+	//Title yanındaki butona tıklandığında sıralama yapılacak.
 	document.querySelector('#title-sorting').addEventListener('click',() => {
-		// başlığa tıklandığında sıralama yapılacak.
+		
 		todos.sort((a, b) => {
 			// küçük ve büyük harf farkını engellemek için
 			const nameA = a.title.toUpperCase(); // ignore upper and lowercase
@@ -119,18 +121,19 @@ const renderTodos = (page = 1) => {
 	});
 
 
-	
+	//ID butonuna tıklandığında sıralma yapacak
 	document.querySelector('#id-sorting').addEventListener('click', () => {
 		todos.sort((a, b) =>  b.id - a.id)
 		renderTodos(current_page);
 	})
-
-
+	
+	// UserID ye göre sıralama yapacak
 	document.querySelector('#usid-sorting').addEventListener('click', ()=>{
 		todos.sort((a, b)=> b.userId - a.userId)
 		renderTodos(current_page)
 	})
 
+	//Görevde öncelik yapıldı olmak üzere sıralama yapılacak
 	document.querySelector('#task-sorting').addEventListener('click', ()=> {
 		todos.sort((a, b)=> { 
 			if(a.completed==true & b.completed==false){
